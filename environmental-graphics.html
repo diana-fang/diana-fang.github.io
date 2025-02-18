@@ -14,36 +14,26 @@
             display: flex;
         }
         .sidebar {
-            width: 20%;
+            width: 10%;
             padding: 40px;
             text-align: left;
+            position:fixed;
         }
         .sidebar h1 {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: bold;
         }
         .sidebar nav {
-            margin-top: 60px;
+            margin-top: 30px;
         }
         .sidebar nav a {
             display: block;
-            margin: 15px 0;
-            font-size: 22px;
+            margin: 10px;
+            font-size: 17px;
             text-decoration: none;
-            color: #333;
+            color: #808080;
         }
-        .gallery {
-            width: 75%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            padding: 40px;
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+
         .social {
             margin-top: 30px;
         }
@@ -64,35 +54,51 @@
             -webkit-transform: scale(1.5, 1.5);
             transform: scale(1.5, 1.5);
         }
+
+        .mm-columns {
+          width: 80%;
+          margin-left: 17%;
+          margin-right: 3%;
+          --col-width: var(--_col-width, 200px);
+          --columns: var(--_columns, 3);
+          --gap: var(--_gap, 10px);
+          columns: var(--col-width) var(--columns);
+          column-gap: var(--gap);
+        }
+        .mm-columns__item:not(:last-child) {
+          margin-bottom: var(--gap);
+        }
+        .mm-columns__img {
+          width: 100%;
+          height: auto;
+        }
+        a {
+          cursor: zoom-in;
+        }
     </style>
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+    <link href="mm-masonry.css" rel="stylesheet" />
 </head>
+
 <body>
     <aside class="sidebar">
-        <h1>Diana Fang</h1>
+        <h1>DIANA FANG</h1>
         <hr>
         <nav>
             <a href="index.html"> Home </a>
             <a href="environmental-graphics.html"> <b> Environmental Graphics </b> </a>
-            <a href="art.html">Art</a>
+            <a href="art.html"> Art </a>
             <a href="me.html"> Me </a>
         </nav>
-        <div class="social">
-            <a href="#">&#x1F426;</a>
-            <a href="#">&#x1F464;</a>
-            <a href="#">&#x1F4F7;</a>
-            <a href="#">&#x1F4C8;</a>
-        </div>
     </aside>
-    <section class="gallery">
-        <img src="img1.png" alt="Architecture 1" class="pop-out">
-        <img src="img2.png" alt="Architecture 2" class="pop-out">
-        <img src="img3.png" alt="Architecture 3" class="pop-out">
-        <img src="img4.png" alt="Architecture 4" class="pop-out">
-        <img src="img5.png" alt="Architecture 5" class="pop-out">
-        <img src="img6.png" alt="Architecture 6" class="pop-out">
-        <img src="img7.png" alt="Architecture 7" class="pop-out">
-        <img src="img8.png" alt="Architecture 8" class="pop-out">
-        <img src="img9.png" alt="Architecture 9" class="pop-out">
+    <section>
+        <div class="mm-columns">
+            <div class="mm-columns__item">
+            <a href="art/A_forest_dwelling.jpg" data-lightbox="masonry" data-title="A Forest Dwelling"><img class="mm-columns__img" src="art/A_forest_dwelling.jpg"></a>
+            </div>
+        </div>
     </section>
+
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
