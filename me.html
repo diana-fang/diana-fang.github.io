@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diana Fang - About Me</title>
+    <title>Diana Fang - About me</title>
     <style>
         body {
             font-family: Helvetica, sans-serif;
@@ -19,14 +19,36 @@
             text-align: left;
             position:fixed;
         }
+
+        .center {
+          margin: auto;
+          margin-left: 20%;
+          margin-right: 10%;
+          width: 100%;
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            width: 100%;
+            font-size: 17pt;
+        }
+
         .sidebar h1 {
             font-size: 30px;
             font-weight: bold;
+            text-align: left;
         }
         .sidebar nav {
             margin-top: 30px;
         }
         .sidebar nav a {
+            text-align: left;
             display: block;
             margin: 10px;
             font-size: 17px;
@@ -56,12 +78,11 @@
         }
 
         .mm-columns {
-          width: 80%;
-          margin-left: 17%;
-          margin-right: 3%;
+          width: 500px;
+          margin: auto;
           margin-top: 2%;
-          --col-width: var(--_col-width, 200px);
-          --columns: var(--_columns, 3);
+          --col-width: var(--_col-width, 500px);
+          --columns: var(--_columns, 1);
           --gap: var(--_gap, 10px);
           columns: var(--col-width) var(--columns);
           column-gap: var(--gap);
@@ -70,10 +91,9 @@
           margin-bottom: var(--gap);
         }
         .mm-columns__img {
-          width: 100%;
+          width: 500px;
           height: auto;
-        }
-        a {
+          margin: auto;
           cursor: zoom-in;
         }
 
@@ -85,13 +105,16 @@
                 position:fixed;
             }
             .sidebar h1 {
+                width: 35%;
                 font-size: 30px;
                 font-weight: bold;
             }
             .sidebar nav {
+                width: 35%;
                 margin-top: 30px;
             }
             .sidebar nav a {
+                width: 35%;
                 display: block;
                 margin: 10px;
                 font-size: 17px;
@@ -99,33 +122,73 @@
                 color: #808080;
             }
 
+            .center {
+              margin: auto;
+              padding-right: 0%;
+              margin-top: 2%;
+              margin-left: 34%;
+              margin-right: 0%;
+              width: 50%;
+            }
+
+            h1 {
+                font-size: 18pt;
+            }
+
+            p {
+                text-align: center;
+                width: 100%;
+                font-size: 13pt;
+            }
+
             .mm-columns {
               width: auto;
-              margin-left: 45%;
-              margin-right: 3%;
-              margin-top: 3%;
-              --col-width: var(--_col-width, 200px);
-              --columns: var(--_columns, 3);
+              margin: auto;
+              margin-top: 4%;
+              --col-width: var(--_col-width, 500px);
+              --columns: var(--_columns, 1);
               --gap: var(--_gap, 10px);
               columns: var(--col-width) var(--columns);
               column-gap: var(--gap);
             }
+            .mm-columns__item:not(:last-child) {
+              margin-bottom: var(--gap);
+            }
+            .mm-columns__img {
+              width: 100%;
+              height: auto;
+              margin: auto;
+              cursor: zoom-in;
+            }
         }
     </style>
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+    <link href="mm-masonry.css" rel="stylesheet" />
 </head>
+
 <body>
     <aside class="sidebar">
-        <h1>Diana Fang</h1>
+        <h1>DIANA FANG</h1>
         <hr>
         <nav>
             <a href="index.html"> Home </a>
+            <a href="art.html"> Art </a>
             <a href="environmental-graphics.html"> Environmental Graphics </a>
-            <a href="art.html">Art</a>
             <a href="me.html"> <b> Me </b> </a>
         </nav>
     </aside>
-    <section>
-     
-    </section>
+    <div class="center">
+        <div class="mm-columns">
+            <div class="mm-columns__item">
+            <a href="profile.jpg" data-lightbox="masonry" data-title="Diana Fang"><img class="mm-columns__img" src="profile.jpg"></a>
+            </div>
+        </div>
+        <hr>
+        <h1> Architect and digital artist based in Charlottesville, VA. </h1>
+        <p> Contact: <a href="mailto:fang@vmdo.com">fang@vmdo.com</a> </p>
+        <p>
+            Instagram: <a href="https://www.instagram.com/diana.fang/">diana.fang</a>
+        </p>
+    </div>
 </body>
 </html>
