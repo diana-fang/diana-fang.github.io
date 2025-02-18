@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Fang</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            padding: 40px;
+            text-align: left;
+        }
+        .sidebar h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .sidebar nav {
+            margin-top: 60px;
+        }
+        .sidebar nav a {
+            display: block;
+            margin: 15px 0;
+            font-size: 22px;
+            text-decoration: none;
+            color: #333;
+        }
+        .gallery {
+            width: 75%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 40px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .social {
+            margin-top: 30px;
+        }
+        .social a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .pop-out
+        {
+            transition: transform .5s;
+        }
+
+        .pop-out:hover
+        {
+            -ms-transform: scale(1.5, 1.5);
+            -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <h1>Diana Fang</h1>
+        <hr>
+        <nav>
+            <a href="index.html"> <b> Home </b> </a>
+            <a href="environmental-graphics.html"> Environmental Graphics </a>
+            <a href="art.html">Art</a>
+            <a href="me.html"> Me </a>
+        </nav>
+        <div class="social">
+            <a href="#">&#x1F426;</a>
+            <a href="#">&#x1F464;</a>
+            <a href="#">&#x1F4F7;</a>
+            <a href="#">&#x1F4C8;</a>
+        </div>
+    </aside>
+    <section class="gallery">
+        <img src="img1.png" alt="Architecture 1" class="pop-out">
+        <img src="img2.png" alt="Architecture 2" class="pop-out">
+        <img src="img3.png" alt="Architecture 3" class="pop-out">
+        <img src="img4.png" alt="Architecture 4" class="pop-out">
+        <img src="img5.png" alt="Architecture 5" class="pop-out">
+        <img src="img6.png" alt="Architecture 6" class="pop-out">
+        <img src="img7.png" alt="Architecture 7" class="pop-out">
+        <img src="img8.png" alt="Architecture 8" class="pop-out">
+        <img src="img9.png" alt="Architecture 9" class="pop-out">
+    </section>
+</body>
+</html>

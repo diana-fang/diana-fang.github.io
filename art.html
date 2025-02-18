@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Fang</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            padding: 40px;
+            text-align: left;
+        }
+        .sidebar h1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .sidebar nav {
+            margin-top: 30px;
+        }
+        .sidebar nav a {
+            display: block;
+            margin: 10px;
+            font-size: 17px;
+            text-decoration: none;
+            color: #808080;
+        }
+
+        .social {
+            margin-top: 30px;
+        }
+        .social a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .pop-out
+        {
+            transition: transform .5s;
+        }
+
+        .pop-out:hover
+        {
+            -ms-transform: scale(1.5, 1.5);
+            -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+        }
+
+        .mm-columns {
+          width: auto;
+          margin-left: 6%;
+          margin-right: 3%;
+          --col-width: var(--_col-width, 200px);
+          --columns: var(--_columns, 3);
+          --gap: var(--_gap, 10px);
+          columns: var(--col-width) var(--columns);
+          column-gap: var(--gap);
+        }
+        .mm-columns__item:not(:last-child) {
+          margin-bottom: var(--gap);
+        }
+        .mm-columns__img {
+          width: 100%;
+          height: auto;
+        }
+        a {
+          cursor: zoom-in;
+        }
+    </style>
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+    <link href="mm-masonry.css" rel="stylesheet" />
+</head>
+
+<body>
+    <aside class="sidebar">
+        <h1>DIANA FANG</h1>
+        <hr>
+        <nav>
+            <a href="index.html"> Home </a>
+            <a href="environmental-graphics.html"> Environmental Graphics </a>
+            <a href="art.html"> <b> Art </b> </a>
+            <a href="me.html"> Me </a>
+        </nav>
+    </aside>
+    <section>
+        <div class="mm-columns">
+            <div class="mm-columns__item">
+            <a href="art/A_forest_dwelling.jpg" data-lightbox="masonry" data-title="A Forest Dwelling"><img class="mm-columns__img" src="art/A_forest_dwelling.jpg"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/A_Study_on_Cavener.png" data-lightbox="masonry" data-title="A Study On Cavener"><img class="mm-columns__img" src="art/A_Study_on_Cavener.png"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/Architectural_Fairy_tales_Competition_2017_1.jpg" data-lightbox="masonry" data-title="Architectural Fairy Tales Competition"><img class="mm-columns__img" src="art/Architectural_Fairy_tales_Competition_2017_1.jpg"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/Architectural_Fairy_tales_Competition_2017_2.png" data-lightbox="masonry" data-title="Architectural Fairy Tales Competition"><img class="mm-columns__img" src="art/Architectural_Fairy_tales_Competition_2017_2.png"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/Architectural_Fairy_tales_Competition_2017_3.png" data-lightbox="masonry" data-title="Architectural Fairy Tales Competition"><img class="mm-columns__img" src="art/Architectural_Fairy_tales_Competition_2017_3.png"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/Dante.jpg" data-lightbox="masonry" data-title="Dante - Character Design for a D&D Campaign"><img class="mm-columns__img" src="art/Dante.jpg"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/Early_work.jpg" data-lightbox="masonry" data-title="Early Work"><img class="mm-columns__img" src="art/Early_work.jpg"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/heroes.jpg" data-lightbox="masonry" data-title="Heroes - Portraits of Fellow VMDO Colleagues as Superheroes"><img class="mm-columns__img" src="art/heroes.jpg"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/How_to_train_your_skycat.jpg" data-lightbox="masonry" data-title="How to Train Your Skycat"><img class="mm-columns__img" src="art/How_to_train_your_skycat.jpg"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/Iridescent_Tapioca_Fantasy.png" data-lightbox="masonry" data-title="Iridescent Tapioca Fantasy"><img class="mm-columns__img" src="art/Iridescent_Tapioca_Fantasy.png"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/Freedom_and_Liberation_Days.png" data-lightbox="masonry" data-title="Freedom & Liberation Days - Graphic Design Commission"><img class="mm-columns__img" src="art/Freedom_and_Liberation_Days.png"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/Smith_Mountain_Lake.png" data-lightbox="masonry" data-title="Smith Mountain Lake"><img class="mm-columns__img" src="art/Smith_Mountain_Lake.png"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/Ultramarine_Wonder.jpg" data-lightbox="masonry" data-title="Ultramarine Wonder"><img class="mm-columns__img" src="art/Ultramarine_Wonder.jpg"></a>
+            </div>
+            <div class="mm-columns__item">
+            <a href="art/Tux.jpg" data-lightbox="masonry" data-title="Tux"><img class="mm-columns__img" src="art/Tux.jpg"></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
